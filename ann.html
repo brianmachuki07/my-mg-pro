@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content="width = device - width, initial-scale = 1.0">
+    <title>My Web Development Basics</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      header {
+        background-color: #007Bff;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline;
+        margin: 0 15px;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+      }
+      section {
+        padding: 20px;
+        margin: 20px;
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      button {
+        padding:10px;
+        background: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button-hover {
+        background: 218838;
+      }
+      table {
+        width:100%;
+        border-collapse: collapse;
+        margin 20px 0;
+      }
+      table,th,td {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+      th {
+        background-color: #007Bff;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Web Development Basics</h1>
+      <nav>
+        <ul>
+         <li><a href="#html">HTML</a></li>
+         <li><a href="#css">CSS</a></li>
+         <li><a href="javascript">JavaScript</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id ="html">
+        <h2>HTML Basics</h2>
+        <p>HTML is used to structure web pages. Below is a table with common HTML elements:</p>
+        <table>
+          <tr>
+            <th>Elements</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>&lt;p&gt;</td>
+            <td>Defines a Paragraph</td>
+          </tr>
+          <tr>
+            <td>&lt;h1&gt; to &lt;h6&gt;</td>
+            <td>Defines headings</td>
+          </tr>
+          <tr>
+            <td>&lt;a&gt;</td>
+            <td>Defines a hyperlink</td>
+          </tr>
+        </table>
+      </section>
+      <section id="CSS">
+        <h2>CSS Basics</h2>
+        <p>CSS styles pages.Here's an interactive  button to change the background-color:</p>
+        <button id = "changeColorBtn">Change Background Color</button>
+      </section>
+      <section id ="javascripts">
+        <h2>JavaScript Basics</h2>
+        <p>JavaScript makes websites interactive. . Click below for a greeting:</p>
+        <button id = "greetBtn">Click me for greeting!</button>
+      </section>
+    </main>
+    <script>
+      document.getElementById('greetBtn').addEventListener ('click',function () {
+        alert("Hello! Welcome to my basic web development page.");
+      });
+      document.getElementBgId('changeColorBtn').addEventListener ('click',function () {
+        document.body.style.backgroundColor = 
+        document.body.style.backgroundColor === 'lightyellow' ? '#f4f4f4' : 'lightyellow'; 
+      });
+    </script>
+  </body>
+</html>
